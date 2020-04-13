@@ -7,7 +7,7 @@ ui <- fluidPage(
   sidebarLayout(
     sidebarPanel(
       numericInput("numRounds", "Number of rounds", 10, min = 6, max = 15, step = 1),
-      numericInput("riskParam", "Theta", 0, min = 0, max = 1, step = 0.05),
+      numericInput("riskParam", "Theta", 0, min = 0, max = 10, step = 0.1),
       numericInput("pValue", "p(Poor rain) = 1 /", 3, min = 1, max = 100, step = 1),
       numericInput("normalCP", "Normal: CP", 100, min=0, max=200, step=10),
       numericInput("normalMSD", "Normal: MSD",100, min=0, max=200, step=10),
